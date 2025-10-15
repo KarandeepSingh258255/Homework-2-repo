@@ -63,6 +63,7 @@ public class Teacher extends Person{
         s += "\nID number: " + this.ID;
         s += "\nMonthly Salary: " + this.monthly_salary;
         s += "\nYears Teaching: " + this.num_yr_prf;
+
         return s;
     }
 
