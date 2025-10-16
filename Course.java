@@ -38,9 +38,7 @@ public class Course {
 
     // no arg
 
-    Course(){
 
-    }
 }
 
 
