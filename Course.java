@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class Course {
     private Professor instructor;
     private CollegeStudent[] Liststudents;
@@ -7,7 +5,7 @@ public class Course {
 
     // no arg
 
-    Course() {
+    Course(Course listCours) {
         this.courseName = "";
         this.Liststudents = new CollegeStudent[0];
         for (int i = 0; i < Liststudents.length; i++) {
