@@ -9,11 +9,12 @@ public class Course {
 
 
     public Professor getInstructor() {
-        return instructor;
+        Professor copy = new Professor();
+        return copy;
     }
 
     public void setInstructor(Professor instructor) {
-        this.instructor = instructor;
+        this.instructor = new Professor();
     }
 
     public Student[] getListstudents() {
