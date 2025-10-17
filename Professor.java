@@ -46,11 +46,11 @@ public class Professor extends Teacher {
         this.specialty = "";
         this.research_area = "";
         this.rank = "";
-        this.Tenured = true;
+        this.Tenured = false;
     }
 
     // fully-loaded
-    Professor(String name, Boolean alive, int age, String SSN, String ID, int monthly_salary, int num_yr_prf, String specialty, String research_area, String rank, Boolean Tenured){
+    Professor(String name, Boolean alive, int age, String SSN, String ID, int monthly_salary, int num_yr_prf, String specialty, String research_area, Boolean Tenured){
         super(name, alive, age, SSN, ID, monthly_salary, num_yr_prf);
         this.specialty = specialty;
         this.research_area = research_area;
@@ -61,6 +61,7 @@ public class Professor extends Teacher {
     //copy
 
     Professor(Professor other){
+        super();
         this.specialty = other.specialty;
         this.research_area = other.research_area;
         this.rank = other.rank;

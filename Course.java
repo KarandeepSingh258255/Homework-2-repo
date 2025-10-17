@@ -11,7 +11,7 @@ public class Course {
         for (int i = 0; i < Liststudents.length; i++) {
             Liststudents[i] = new CollegeStudent(Liststudents[i]);
         }
-        this.instructor = new Professor(instructor);
+        this.instructor = new Professor();
     }
 
     //fully-loaded

@@ -26,12 +26,12 @@ public class Student extends Person {
 
     Student() {
         super();
-        String stu_id = "";
-        double GPA = 0.0;
+        this.stu_id = "";
+        this.GPA = 0.0;
     }
 
     Student (Student other) {
-        super(other);
+       super();
         this.stu_id = other.stu_id;
         this.GPA = other.GPA;
     }
@@ -39,9 +39,10 @@ public class Student extends Person {
     //toString
     public String toString() {
         String s = "";
+        s += super.toString();
         s += "Student Information\n";
-        s += "Student ID: " + stu_id;
-        s += "\nGPA: ";
+        s += "Student ID: " + stu_id + "\n";
+        s += "GPA: " + GPA + "\n";
         return s;
     }
 
