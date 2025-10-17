@@ -43,7 +43,7 @@ public class Teacher extends Person{
     //copy
 
     Teacher(Teacher other){
-        super();
+        super(other);
         this.ID = other.ID;
         this.monthly_salary = other.monthly_salary;
         this.num_yr_prf = other.num_yr_prf;

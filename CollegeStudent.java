@@ -30,7 +30,7 @@ public class CollegeStudent extends Student{
     public String toString() {
         String s = "";
         s += "College Information:\n";
-        s += "Major: " + major;
+        s += "\nMajor: " + major;
         s += "\nGrade: " + grade;
         return s;
     }

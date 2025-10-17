@@ -49,14 +49,21 @@ public class Person {
         this.SSN = "000-00-0000";
     }
 
+    public Person(Person other){
+        this.name = other.name;
+        this.alive = other.alive;
+        this.age = other.age;
+        this.SSN = other.SSN;
+    }
+
     //toString
     public String toString() {
         String s = "";
-        s += "Person Information\n";
-        s += "Name: " + name;
-        s += "Alive: " + alive;
-        s += "Age: " + age;
-        s += "SSN: " + SSN;
+        s += "\nPerson Information\n";
+        s += "\nName: " + name;
+        s += "\nAlive: " + alive;
+        s += "\nAge: " + age;
+        s += "\nSSN: " + SSN;
         return s;
     }
 

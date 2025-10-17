@@ -30,8 +30,8 @@ public class Student extends Person {
         this.GPA = 0.0;
     }
 
-    Student (Student other) {
-       super();
+    Student(Student other) {
+        super(other);
         this.stu_id = other.stu_id;
         this.GPA = other.GPA;
     }

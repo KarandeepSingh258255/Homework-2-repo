@@ -61,7 +61,7 @@ public class Professor extends Teacher {
     //copy
 
     Professor(Professor other){
-        super();
+        super(other);
         this.specialty = other.specialty;
         this.research_area = other.research_area;
         this.rank = other.rank;
