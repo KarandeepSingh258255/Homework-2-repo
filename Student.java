@@ -25,11 +25,13 @@ public class Student extends Person {
     }
 
     Student() {
+        super();
         String stu_id = "";
         double GPA = 0.0;
     }
 
     Student (Student other) {
+        super(other);
         this.stu_id = other.stu_id;
         this.GPA = other.GPA;
     }

@@ -58,7 +58,7 @@ public class Department {
     }
 
     public Department() {
-        this.chair = new Professor();
+        this.chair = new Professor(chair);
         this.listFaculty = new Professor[listFaculty.length];
         for(int i = 0; i < listFaculty.length; i++) {
             this.listFaculty[i] = new Professor(listFaculty[i]);

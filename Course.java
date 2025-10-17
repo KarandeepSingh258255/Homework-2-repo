@@ -11,13 +11,13 @@ public class Course {
         for (int i = 0; i < Liststudents.length; i++) {
             Liststudents[i] = new CollegeStudent(Liststudents[i]);
         }
-        this.instructor = new Professor();
+        this.instructor = new Professor(instructor);
     }
 
     //fully-loaded
 
     Course(Professor instructor, CollegeStudent[] Liststudents, String courseName) {
-        this.instructor = new Professor();
+        this.instructor = new Professor(instructor);
         this.courseName = courseName;
         this.Liststudents = new CollegeStudent[0];
         for (int i = 0; i < Liststudents.length; i++) {
@@ -28,12 +28,12 @@ public class Course {
     //set get
 
     public Professor getInstructor() {
-        Professor copy = new Professor();
+        Professor copy = new Professor(instructor);
         return copy;
     }
 
 public void setInstructor(Professor instructor) {
-    this.instructor = new Professor();
+    this.instructor = new Professor(instructor);
 }
 
 public Student[] getListstudents() {
